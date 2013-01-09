@@ -68,6 +68,18 @@ d = ~~a[b];
 
     <div class="clear"></div>
   </div>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'fabriziogiordanogit';
+(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 
   </div>
@@ -126,10 +138,21 @@ d = ~~a[b];
 
 </div>
 
+
 <script>
-  //I know is bad but it work for my uses case.
-  window.scrollTo( 0, 1 );
+//I know is ugly but it work for my uses case.
+window.addEventListener("load",function() {
+  setTimeout(function(){
+    window.scrollTo(0, 1);
+  }, 0);
+});
 </script>
+
+<script>
+  var _gaq=[['_setAccount','UA-137286-28'],['_setDomainName', 'fabriziogiordano.com'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))
+</script>
+
 </body>
 </html>
 

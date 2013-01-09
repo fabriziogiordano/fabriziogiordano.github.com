@@ -179,10 +179,21 @@ d = ~~a[b];
 
 </div>
 
+
 <script>
-  //I know is bad but it work for my uses case.
-  window.scrollTo( 0, 1 );
+//I know is ugly but it work for my uses case.
+window.addEventListener("load",function() {
+  setTimeout(function(){
+    window.scrollTo(0, 1);
+  }, 0);
+});
 </script>
+
+<script>
+  var _gaq=[['_setAccount','UA-137286-28'],['_setDomainName', 'fabriziogiordano.com'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))
+</script>
+
 </body>
 </html>
 
