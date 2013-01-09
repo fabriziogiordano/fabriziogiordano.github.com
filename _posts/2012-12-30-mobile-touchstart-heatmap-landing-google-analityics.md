@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mobile heatmap landing page
+title: Mobile heatmap landing page with Google Analitycs
 description: mobile heatmap landing page using google Analitycs
 excerpt: Mobile landing page heatmap
 ---
@@ -30,10 +30,9 @@ I then created a small page to draw the canvas on top of an image.
 <script src="https://gist.github.com/4490680.js"></script>
 
 The final result is an image with all the points the users interact with.
-
 ![Heatmap](/assets/images/posts/heatmap.small.png "Heatmap")
 
-You can try a working example [here](/lab/heatmap/heatmap.html) _work only on Chrome or Safari_
+You can try a working example [here](/lab/heatmap/heatmap.html) _(work only on Chrome or Safari)_
 
 I'm quite happy of the results. A considerable number of users interact with  the call to action button in the middle of the page.
 

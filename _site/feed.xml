@@ -4,7 +4,7 @@
  <title>Fabrizio Giordano</title>
  <link href="http://git.fabriziogiordano.com/feed.xml" rel="self"/>
  <link href="http://git.fabriziogiordano.com/"/>
- <updated>2013-01-09T00:21:27-05:00</updated>
+ <updated>2013-01-09T00:28:55-05:00</updated>
  <id>http://git.fabriziogiordano.com/</id>
  <author>
    <name>Fabrizio Giordano</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>Mobile heatmap landing page</title>
-   <link href="http://git.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing"/>
+   <title>Mobile heatmap landing page with Google Analitycs</title>
+   <link href="http://git.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing-google-analityics"/>
    <updated>2012-12-30T00:00:00-05:00</updated>
-   <id>http://git.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing</id>
+   <id>http://git.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing-google-analityics</id>
  </entry>
  
  <entry>
