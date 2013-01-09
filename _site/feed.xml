@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Fabrizio Giordano</title>
+ <link href="http://git.fabriziogiordano.com/feed.xml" rel="self"/>
+ <link href="http://git.fabriziogiordano.com/"/>
+ <updated>2013-01-09T00:19:48-05:00</updated>
+ <id>http://git.fabriziogiordano.com/</id>
+ <author>
+   <name>Fabrizio Giordano</name>
+   <email>giordano.fabrizio@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Mobile heatmap landing page</title>
+   <link href="http://git.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing"/>
+   <updated>2012-12-30T00:00:00-05:00</updated>
+   <id>http://git.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing</id>
+ </entry>
+ 
+ <entry>
+   <title>Luhn10 algorithm</title>
+   <link href="http://git.fabriziogiordano.com/2011/05/luhn10-algorithm"/>
+   <updated>2011-05-18T00:00:00-04:00</updated>
+   <id>http://git.fabriziogiordano.com/2011/05/luhn10-algorithm</id>
+ </entry>
+ 
+
+</feed>

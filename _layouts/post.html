@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="post">
+  <div class="titolo"><h2><a href="{{page.url}}">{{page.title}}</a></h2></div>
+  <small>{{ page.date | date: "%d %B %Y" }} </small>
+  <div class="corpo">
+    {{ content }}
+    <div class="clear"></div>
+  </div>
+</div>

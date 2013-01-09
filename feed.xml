@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Fabrizio Giordano</title>
+ <link href="http://git.fabriziogiordano.com/feed.xml" rel="self"/>
+ <link href="http://git.fabriziogiordano.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://git.fabriziogiordano.com/</id>
+ <author>
+   <name>Fabrizio Giordano</name>
+   <email>giordano.fabrizio@gmail.com</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://git.fabriziogiordano.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://git.fabriziogiordano.com{{ post.id }}</id>
+ </entry>
+ {% endfor %}
+
+</feed>

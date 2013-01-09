@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      img {
+        position: absolute;
+        left:0;
+        top:0;
+      }
+      #heatmap {
+        position: absolute;
+        left:38px;
+        top:146px;
+        border:1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="iphone.png">
+    <canvas id="heatmap" width="500" height="500"></canvas>
+    <script src="data.js"></script>
+    <script>
+      var canvas = document.getElementById('heatmap'),
+          context = canvas.getContext('2d'),
+          centerX = 0,
+          centerY = 0,
+          radius = 3;
+
+      var c = data.length;
+
+      for(var i = 0; i<c; i++) {
+        context.beginPath();
+        context.arc(data[i].x, data[i].y, radius, 0, 1.9 * Math.PI, false);
+        context.fillStyle = '#F54828';
+        context.globalAlpha=0.12;
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = '#B92025';
+        context.stroke();
+      }
+    </script>
+  </body>
+</html>

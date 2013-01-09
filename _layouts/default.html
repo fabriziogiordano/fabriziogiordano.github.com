@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" >
+<!--
+ ________        __                 _           _             ______   _                        __
+|_   __  |      [  |               (_)         (_)          .' ___  | (_)                      |  ]
+  | |_ \_|,--.   | |.--.   _ .--.  __   ____   __   .--.   / .'   \_| __   .--.   _ .--.   .--.| |  ,--.   _ .--.   .--.
+  |  _|  `'_\ :  | '/'`\ \[ `/'`\][  | [_   ] [  |/ .'`\ \ | |   ____[  |/ .'`\ \[ `/'`\]/ /'`\' | `'_\ : [ `.-. |/ .'`\ \
+ _| |_   // | |, |  \__/ | | |     | |  .' /_  | || \__. | \ `.___]  || || \__. | | |    | \__/  | // | |, | | | || \__. |
+|_____|  \'-;__/[__;.__.' [___]   [___][_____][___]'.__.'   `._____.'[___]'.__.' [___]    '.__.;__]\'-;__/[___||__]'.__.'
+ASCII ART BABY!
+-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Fabrizio Giordano | {{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="author" content="Fabrizio Giordano">
+  <meta name="viewport" content="width=device-width" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed/" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+</head>
+<body>
+<div id="header">
+  <div class="wrapper">
+    <h1><a href="/">Fabrizio Giordano</a></h1>
+    <span class="desc">Blog di Fabrizio Giordano</span>
+  </div>
+</div>
+
+<div id="menu">
+  <div class="wrapper">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li class="page_item"><a href="/about/" title="About">About</a></li>
+  </ul>
+  <div class="clear"></div>
+  </div>
+</div>
+<hr />
+
+<div class="wrapper">
+  <div class="container">
+
+    {{ content }}
+
+  </div>
+  <hr />
+
+  <div id="sidebar">
+    <div class="block">
+
+      <h2>
+        Hi there, I’m Fabrizio. I am a <strong>developer</strong>, <strong>dreamer</strong>,
+        <strong>product designer</strong> and speaker from NYC.<br/>
+        I work as Senior Frontend designer and Product manager at <a href="http://www.buongiorno.com">Buongiorno NTT Docomo</a>.
+        I <a href="/archive/">write</a>, <a href="http://twitter.com/fabrygio">tweet</a>,
+        speak and <a href="https://github.com/fabriziogiordano/">share code</a> about stuffs I find online and I like.
+      </h2>
+
+      <h3>Archive</h3>
+      <ul>
+        {% for post in site.posts offset: 0 limit: 50 %}
+          <li class="cat-item"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <div id="footer">
+    <span>Copyright &copy; 2013 Fabrizio Giordano. All right reserved. </span>
+    <span>Build with <a herf="https://github.com/mojombo/jekyll/">Jekyll</a> The source code of this blog is <a href="https://github.com/fabriziogiordano/fabriziogiordano.github.com">hosted on GitHub</a>.You should <a href="/feed.xml">grab the RSS feed</a> and <a href="http://twitter.com/fabrygio">follow me on Twitter</a>.</span>
+  </div>
+
+</div>
+</body>
+</html>

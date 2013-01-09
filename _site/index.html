@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" >
+<!--
+ ________        __                 _           _             ______   _                        __
+|_   __  |      [  |               (_)         (_)          .' ___  | (_)                      |  ]
+  | |_ \_|,--.   | |.--.   _ .--.  __   ____   __   .--.   / .'   \_| __   .--.   _ .--.   .--.| |  ,--.   _ .--.   .--.
+  |  _|  `'_\ :  | '/'`\ \[ `/'`\][  | [_   ] [  |/ .'`\ \ | |   ____[  |/ .'`\ \[ `/'`\]/ /'`\' | `'_\ : [ `.-. |/ .'`\ \
+ _| |_   // | |, |  \__/ | | |     | |  .' /_  | || \__. | \ `.___]  || || \__. | | |    | \__/  | // | |, | | | || \__. |
+|_____|  \'-;__/[__;.__.' [___]   [___][_____][___]'.__.'   `._____.'[___]'.__.' [___]    '.__.;__]\'-;__/[___||__]'.__.'
+ASCII ART BABY!
+-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Fabrizio Giordano | Home</title>
+  <meta name="description" content="Web app, ideas, Fabrizio Giordano" />
+  <meta name="author" content="Fabrizio Giordano">
+  <meta name="viewport" content="width=device-width" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed/" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+</head>
+<body>
+<div id="header">
+  <div class="wrapper">
+    <h1><a href="/">Fabrizio Giordano</a></h1>
+    <span class="desc">Blog di Fabrizio Giordano</span>
+  </div>
+</div>
+
+<div id="menu">
+  <div class="wrapper">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li class="page_item"><a href="/about/" title="About">About</a></li>
+  </ul>
+  <div class="clear"></div>
+  </div>
+</div>
+<hr />
+
+<div class="wrapper">
+  <div class="container">
+
+    
+<div class="post">
+  <div class="titolo"><h2><a href="/2012/12/mobile-touchstart-heatmap-landing">Mobile heatmap landing page</a></h2></div>
+  <small>30 December 2012 </small>
+  <div class="corpo">
+    <p>Few days ago I have been working on some new mobile landing pages.
+One of the most important part of a landing page is that has to be fast to load and create
+user interaction.</p>
+
+<p>On the web there are many ways to <a href="http://en.wikipedia.org/wiki/Mouse_tracking">track user's mouse</a> movements and create some nice heatmap.</p>
+
+<p>On mobile there is no mouse but touch event. I turn on then a small test using Google Analitycs.</p>
+
+<p>First of all I embeded the Goggle Analitycs code: <em>note that this is a <a href="http://mathiasbynens.be/notes/async-analytics-snippet">optimized mobile version</a></em></p>
+
+<script src="https://gist.github.com/7fe63e5009aba6664f4d.js"></script>
+
+
+<p>Then at the touchstart event, attached to the document, it trigger the <em>track</em> function:</p>
+
+<script src="https://gist.github.com/b1f4a3e99faf8f39b12d.js"></script>
+
+
+<p><em>track</em> will send to Google Analitycs the coordinates x and y of the point where the user touch the screen.
+The _gaq.push trigger the <a href="https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide">track event method</a>
+and will send a track event that I called finger and subcategory tap and a value that will be something like <code>x:123;y:234</code></p>
+
+<p>The next step is to export from Google Analitycs those events (I exported some of them, not the whole set):</p>
+
+<script src="https://gist.github.com/4490665.js"></script>
+
+
+<p>I then created a small page to draw the canvas on top of an image.</p>
+
+<script src="https://gist.github.com/4490680.js"></script>
+
+
+<p>The final result is an image with all the points the users interact with.</p>
+
+<p><img src="/assets/images/posts/heatmap.small.png" title="Heatmap" alt="Heatmap" /></p>
+
+<p>You can try a working example <a href="/lab/heatmap/heatmap.html">here</a> <em>work only on Chrome or Safari</em></p>
+
+<p>I'm quite happy of the results. A considerable number of users interact with  the call to action button in the middle of the page.</p>
+
+<p>I'm surprise about the touch that happen at the corner of the screen.
+An other consideration is the number of users that check the page in landscape mode.
+And the landing is not optimizzed for landscape mode. I have to take care of in in the next few days.</p>
+
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="post">
+  <div class="titolo"><h2><a href="/2011/05/luhn10-algorithm">Luhn10 algorithm</a></h2></div>
+  <small>18 May 2011 </small>
+  <div class="corpo">
+    <p>I just discovered today an intersting Gist from <a href="https://gist.github.com/madrobby" title="Thomas Fuchs">Thomas Fuchs</a>.
+This is an implementation of the <a href="http://en.wikipedia.org/wiki/Luhn_algorithm" title="Luhn 10 algorithm">Luhn 10 algorithm</a>
+also known as <strong>"modulus 10"</strong> algorithm.</p>
+
+<p>In this Gist I also learned a new way to convert a string in an integer:</p>
+
+<p><code>
+d = ~~a[b];
+</code></p>
+
+<p>nice eh.</p>
+
+<p>Here the gist:</p>
+
+<script src="https://gist.github.com/976805.js"></script>
+
+
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+  </div>
+  <hr />
+
+  <div id="sidebar">
+    <div class="block">
+
+      <h2>
+        Hi there, I’m Fabrizio. I am a <strong>developer</strong>, <strong>dreamer</strong>,
+        <strong>product designer</strong> and speaker from NYC.<br/>
+        I work as Senior Frontend designer and Product manager at <a href="http://www.buongiorno.com">Buongiorno NTT Docomo</a>.
+        I <a href="/archive/">write</a>, <a href="http://twitter.com/fabrygio">tweet</a>,
+        speak and <a href="https://github.com/fabriziogiordano/">share code</a> about stuffs I find online and I like.
+      </h2>
+
+      <h3>Archive</h3>
+      <ul>
+        
+          <li class="cat-item"><a href="/2012/12/mobile-touchstart-heatmap-landing" title="Mobile heatmap landing page">Mobile heatmap landing page</a></li>
+        
+          <li class="cat-item"><a href="/2011/05/luhn10-algorithm" title="Luhn10 algorithm">Luhn10 algorithm</a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <div id="footer">
+    <span>Copyright &copy; 2013 Fabrizio Giordano. All right reserved. </span>
+    <span>Build with <a herf="https://github.com/mojombo/jekyll/">Jekyll</a> The source code of this blog is <a href="https://github.com/fabriziogiordano/fabriziogiordano.github.com">hosted on GitHub</a>.You should <a href="/feed.xml">grab the RSS feed</a> and <a href="http://twitter.com/fabrygio">follow me on Twitter</a>.</span>
+  </div>
+
+</div>
+</body>
+</html>
