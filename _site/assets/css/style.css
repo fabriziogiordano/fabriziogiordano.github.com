@@ -88,7 +88,7 @@ address { margin: 0; padding: 0; font-style: normal;}
 .post div.corpo ul, .post div.corpo ol{ margin: 15px 0 15px 35px; }
 .post div.corpo p { margin-bottom: 10px; }
 
-.post .meta {display: block; padding: 6px 0; color: #95B2D1; text-align: center; border-top: 1px solid #BDD3EB; border-bottom: 1px solid #BDD3EB; background: #F1F6FC;}
+.post .meta {display: block; margin-bottom:60px; padding: 6px 0; color: #95B2D1; text-align: center; border-top: 1px solid #BDD3EB; border-bottom: 1px solid #BDD3EB; background: #F1F6FC;}
 .post .meta span {color: #444;}
 
 .post img {border:2px solid #e2e2e2; float:left; margin:0 10px 10px 0;}
