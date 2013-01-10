@@ -12,8 +12,8 @@ ASCII ART BABY!
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Fabrizio Giordano | Luhn10 algorithm</title>
-  <meta name="description" content="" />
+  <title>Fabrizio Giordano | JavaScript this and meaning of document.querySelector.bind(document);</title>
+  <meta name="description" content="JavaScript this and meaning of document.querySelector.bind(document);" />
   <meta name="author" content="Fabrizio Giordano">
   <meta name="viewport" content="width=device-width" />
 
@@ -46,25 +46,60 @@ ASCII ART BABY!
   <div class="container">
 
     <div class="post">
-  <div class="titolo"><h2><a href="/2011/05/luhn10-algorithm">Luhn10 algorithm</a></h2></div>
-  <small>18 May 2011 </small>
+  <div class="titolo"><h2><a href="/2013/01/this-javascript">JavaScript this and meaning of document.querySelector.bind(document);</a></h2></div>
+  <small>10 January 2013 </small>
   <div class="corpo">
-    <p>I just discovered today an intersting Gist from <a href="https://gist.github.com/madrobby" title="Thomas Fuchs">Thomas Fuchs</a>.
-This is an implementation of the <a href="http://en.wikipedia.org/wiki/Luhn_algorithm" title="Luhn 10 algorithm">Luhn 10 algorithm</a>
-also known as <strong>"modulus 10"</strong> algorithm.</p>
+    <h3>d.querySelector.bind(d);</h3>
 
-<p>In this Gist I also learned a new way to convert a string in an integer:</p>
+<p>I was checking some parallax optimization on <a href="http://www.html5rocks.com/en/tutorials/speed/parallax/">Html5Rocks</a>
+and I notice in a <a href="http://www.html5rocks.com/static/demos/parallax/demo-1a/scripts/parallax.js">script</a>:</p>
 
 <p><code>
-d = ~~a[b];
+(function(win, d) {</p>
+
+<p>  var $ = d.querySelector.bind(d);</p>
+
+<p>  ....</p>
+
+<p>  var mainBG = $('section#content');</p>
+
+<p>  ....</p>
+
+<p>})(window, document);
 </code></p>
 
-<p>nice eh.</p>
+<p><strong><em><code>var $ = d.querySelector.bind(d);</code></em></strong> was not immediately clear, why bind the document?</p>
 
-<p>Here the gist:</p>
+<p>I asked on <a href="http://stackoverflow.com/questions/14251357/what-is-the-meaning-of-document-queryselector-binddocument">Stackoverflow</a>
+and I got a nice answer from <a href="http://stackoverflow.com/users/1048572/bergi">Bergi</a>:</p>
 
-<script src="https://gist.github.com/976805.js"></script>
+<p><em>The function is not bound to a specific document (there may be other ones, not just window.document).
+Try it without, and you will get an WRONG_THIS_ERR exception - you will need to apply it on an object that implements the <a href="http://www.w3.org/TR/selectors-api/#interface-definitions">Document interface</a>.</em></p>
 
+<p><em>Also have a look on <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/this">MDN's introduction to the this keyword</a> on how the thisVal("context") of a function call is determined.
+However I got back to some other considerations about the <code>this</code> keyword in JavaScript.</em></p>
+
+<h3>this</h3>
+
+<p>Again it was about the <code>this</code> keyword in JavaScript. The closest mental representation I came up for the <code>this</code> keyword in JavaScript is that assuming we are in a browser and not in "strict mode" if we create a function:</p>
+
+<p><code>function a() { console.log(this); }</code></p>
+
+<p>and we call</p>
+
+<p><code>a();</code></p>
+
+<p>the console print <code>window</code>. It is like JavaScript <strong>append</strong> <code>this</code> behind the scene eg. <code>this.a();</code>. In this case <code>this</code> is the <em>window</em> context.</p>
+
+<p>For the same reason if we create a new object <code>var o = {};</code> and we assign the a method <code>o.a = a;</code> and we execute <code>o.a();</code>
+the console print the <code>o</code> object.</p>
+
+<p>Note, this might not be the proper explanation, but it is the easiest way for me to remember it.</p>
+
+<p>Therefore for <code>var $ = d.querySelector.bind(d);</code>  we are assigning to $ a new function <em>querySelector</em>. <br/>
+<code>bind</code> assign <code>document</code> as <code>this</code> of the new function.<br/>
+At the end it is as we execute<br/>
+<strong>$('something')</strong> as <strong>document.querySelector('something')</strong></p>
 
     <div class="clear"></div>
   </div>
