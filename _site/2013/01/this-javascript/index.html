@@ -177,11 +177,13 @@ At the end it is as we execute<br/>
 
 <script>
 //I know is ugly but it work for my uses case.
-window.addEventListener("load",function() {
-  setTimeout(function(){
-    window.scrollTo(0, 1);
-  }, 0);
-});
+if(!location.hash) {
+  window.addEventListener("load",function() {
+    setTimeout(function(){
+      window.scrollTo(0, 1);
+    }, 0);
+  });
+}
 </script>
 
 <script>

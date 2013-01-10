@@ -252,11 +252,13 @@ d = ~~a[b];
 
 <script>
 //I know is ugly but it work for my uses case.
-window.addEventListener("load",function() {
-  setTimeout(function(){
-    window.scrollTo(0, 1);
-  }, 0);
-});
+if(!location.hash) {
+  window.addEventListener("load",function() {
+    setTimeout(function(){
+      window.scrollTo(0, 1);
+    }, 0);
+  });
+}
 </script>
 
 <script>
