@@ -4,13 +4,20 @@
  <title>Fabrizio Giordano</title>
  <link href="http://git.fabriziogiordano.com/feed.xml" rel="self"/>
  <link href="http://git.fabriziogiordano.com/"/>
- <updated>2013-01-11T00:58:49-05:00</updated>
+ <updated>2013-02-25T16:58:23-05:00</updated>
  <id>http://git.fabriziogiordano.com/</id>
  <author>
    <name>Fabrizio Giordano</name>
    <email>giordano.fabrizio@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Prototype webapp using distraction free font</title>
+   <link href="http://git.fabriziogiordano.com/2013/02/prototype-font"/>
+   <updated>2013-02-24T00:00:00-05:00</updated>
+   <id>http://git.fabriziogiordano.com/2013/02/prototype-font</id>
+ </entry>
  
  <entry>
    <title>JavaScript this and meaning of document.querySelector.bind(document);</title>
