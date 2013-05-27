@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Fabrizio Giordano</title>
- <link href="http://git.fabriziogiordano.com/feed.xml" rel="self"/>
- <link href="http://git.fabriziogiordano.com/"/>
+ <link href="http://www.fabriziogiordano.com/feed.xml" rel="self"/>
+ <link href="http://www.fabriziogiordano.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://git.fabriziogiordano.com/</id>
+ <id>http://www.fabriziogiordano.com/</id>
  <author>
    <name>Fabrizio Giordano</name>
    <email>giordano.fabrizio@gmail.com</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://git.fabriziogiordano.com{{ post.url }}"/>
+   <link href="http://www.fabriziogiordano.com/{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://git.fabriziogiordano.com{{ post.id }}</id>
+   <id>http://www.fabriziogiordano.com{{ post.id }}</id>
  </entry>
  {% endfor %}
 
