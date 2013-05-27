@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Fabrizio Giordano</title>
- <link href="http://git.fabriziogiordano.com/feed.xml" rel="self"/>
- <link href="http://git.fabriziogiordano.com/"/>
- <updated>2013-05-27T14:28:06-04:00</updated>
- <id>http://git.fabriziogiordano.com/</id>
+ <link href="http://www.fabriziogiordano.com/feed.xml" rel="self"/>
+ <link href="http://www.fabriziogiordano.com/"/>
+ <updated>2013-05-27T16:29:08-04:00</updated>
+ <id>http://www.fabriziogiordano.com/</id>
  <author>
    <name>Fabrizio Giordano</name>
    <email>giordano.fabrizio@gmail.com</email>
@@ -14,30 +14,30 @@
  
  <entry>
    <title>Prototype webapp using distraction free font</title>
-   <link href="http://git.fabriziogiordano.com/2013/02/prototype-font"/>
+   <link href="http://www.fabriziogiordano.com//2013/02/prototype-font"/>
    <updated>2013-02-24T00:00:00-05:00</updated>
-   <id>http://git.fabriziogiordano.com/2013/02/prototype-font</id>
+   <id>http://www.fabriziogiordano.com/2013/02/prototype-font</id>
  </entry>
  
  <entry>
    <title>JavaScript this and meaning of document.querySelector.bind(document);</title>
-   <link href="http://git.fabriziogiordano.com/2013/01/this-javascript"/>
+   <link href="http://www.fabriziogiordano.com//2013/01/this-javascript"/>
    <updated>2013-01-10T00:00:00-05:00</updated>
-   <id>http://git.fabriziogiordano.com/2013/01/this-javascript</id>
+   <id>http://www.fabriziogiordano.com/2013/01/this-javascript</id>
  </entry>
  
  <entry>
    <title>Mobile heatmap landing page with Google Analytics</title>
-   <link href="http://git.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing-google-analytics"/>
+   <link href="http://www.fabriziogiordano.com//2012/12/mobile-touchstart-heatmap-landing-google-analytics"/>
    <updated>2012-12-30T00:00:00-05:00</updated>
-   <id>http://git.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing-google-analytics</id>
+   <id>http://www.fabriziogiordano.com/2012/12/mobile-touchstart-heatmap-landing-google-analytics</id>
  </entry>
  
  <entry>
    <title>Luhn10 algorithm</title>
-   <link href="http://git.fabriziogiordano.com/2011/05/luhn10-algorithm"/>
+   <link href="http://www.fabriziogiordano.com//2011/05/luhn10-algorithm"/>
    <updated>2011-05-18T00:00:00-04:00</updated>
-   <id>http://git.fabriziogiordano.com/2011/05/luhn10-algorithm</id>
+   <id>http://www.fabriziogiordano.com/2011/05/luhn10-algorithm</id>
  </entry>
  
 
