@@ -16,4 +16,4 @@ However I was looking for something more abstract and I got into this project [R
 
 The result is a page with abstract text like this example:
 
-<img src="https://raw.github.com/christiannaths/Redacted-Font/screenshots/screenshots/redacted-script-bold-screenshot-01.png" style="width:658px;">
+<img src="https://raw.github.com/christiannaths/Redacted-Font/screenshots/screenshots/redacted-script-bold-screenshot-01.png" style="width:95%;">
