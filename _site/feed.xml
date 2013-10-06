@@ -4,13 +4,20 @@
  <title>Fabrizio Giordano</title>
  <link href="http://www.fabriziogiordano.com/feed.xml" rel="self"/>
  <link href="http://www.fabriziogiordano.com/"/>
- <updated>2013-09-01T19:09:20-04:00</updated>
+ <updated>2013-10-06T18:24:18-04:00</updated>
  <id>http://www.fabriziogiordano.com/</id>
  <author>
    <name>Fabrizio Giordano</name>
    <email>giordano.fabrizio@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Seven Languages in Seven Weeks (part 1)</title>
+   <link href="http://www.fabriziogiordano.com//2013/10/seven-languages-in-seven-weeks"/>
+   <updated>2013-10-06T00:00:00-04:00</updated>
+   <id>http://www.fabriziogiordano.com/2013/10/seven-languages-in-seven-weeks</id>
+ </entry>
  
  <entry>
    <title>Prototype webapp using distraction free font</title>

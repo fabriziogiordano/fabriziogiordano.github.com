@@ -20,7 +20,7 @@ Then at the touchstart event, attached to the document, it trigger the _track_ f
 <script src="https://gist.github.com/b1f4a3e99faf8f39b12d.js"></script>
 
 _track_ will send to Google Analytics the coordinates x and y of the point where the user touch the screen.
-The _gaq.push trigger the <a href="https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide">track event method</a>
+The _gaq.push_ trigger the <a href="https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide">track event method</a>
 and will send a track event that I called finger and subcategory tap and a value that will be something like <code>x:123;y:234</code>
 
 The next step is to export from Google Analytics those events (I exported some of them, not the whole set):
