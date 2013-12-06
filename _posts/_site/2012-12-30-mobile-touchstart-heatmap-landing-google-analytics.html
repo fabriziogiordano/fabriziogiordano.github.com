@@ -1,0 +1,23 @@
+<p>Few days ago I have been working on some new mobile landing pages. One of the most important part of a landing page is that has to be fast to load and create user interaction.</p>
+
+<p>On the web there are many ways to <a href='http://en.wikipedia.org/wiki/Mouse_tracking'>track user&#8217;s mouse</a> movements and create some nice heatmap.</p>
+
+<p>On mobile there is no mouse but touch event. I turn on then a small test using Google Analytics.</p>
+
+<p>First of all I embeded the Goggle Analytics code: <em>note that this is a <a href='http://mathiasbynens.be/notes/async-analytics-snippet'>optimized mobile version</a></em> <script src='https://gist.github.com/7fe63e5009aba6664f4d.js' /></p>
+
+<p>Then at the touchstart event, attached to the document, it trigger the <em>track</em> function: <script src='https://gist.github.com/b1f4a3e99faf8f39b12d.js' /></p>
+
+<p><em>track</em> will send to Google Analytics the coordinates x and y of the point where the user touch the screen. The <em>gaq.push</em> trigger the <a href='https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide'>track event method</a> and will send a track event that I called finger and subcategory tap and a value that will be something like <code>x:123;y:234</code></p>
+
+<p>The next step is to export from Google Analytics those events (I exported some of them, not the whole set): <script src='https://gist.github.com/4490665.js' /></p>
+
+<p>I then created a small page to draw the canvas on top of an image. <script src='https://gist.github.com/4490680.js' /></p>
+
+<p>The final result is an image with all the points the users interact with. <img alt='Heatmap' src='/assets/images/posts/heatmap.small.png' /></p>
+
+<p>You can try a working example <a href='/lab/heatmap/heatmap.html'>here</a> <em>(work only on Chrome or Safari)</em></p>
+
+<p>I&#8217;m quite happy of the results. A considerable number of users interact with the call to action button in the middle of the page.</p>
+
+<p>I&#8217;m surprise about the touch that happen at the corner of the screen. An other consideration is the number of users that check the page in landscape mode. And the landing is not optimizzed for landscape mode. I have to take care of in in the next few days.</p>

@@ -1,0 +1,20 @@
+<div class='highlight'><pre><code class='ruby'><span class='lineno'> 1</span> <span class='n'>package</span> <span class='n'>main</span>
+<span class='lineno'> 2</span> 
+<span class='lineno'> 3</span> <span class='n'>import</span> <span class='s2'>&quot;fmt&quot;</span>
+<span class='lineno'> 4</span> 
+<span class='lineno'> 5</span> <span class='n'>func</span> <span class='n'>main</span><span class='p'>()</span> <span class='p'>{</span>
+<span class='lineno'> 6</span> 	<span class='n'>x</span> <span class='p'>:</span><span class='o'>=</span> <span class='o'>[]</span><span class='n'>uint</span> <span class='p'>{</span>
+<span class='lineno'> 7</span> 		<span class='mi'>48</span><span class='p'>,</span><span class='mi'>94</span><span class='p'>,</span><span class='mi'>23</span><span class='p'>,</span>
+<span class='lineno'> 8</span> 		<span class='mi'>3</span><span class='p'>,</span><span class='mi'>45</span><span class='p'>,</span><span class='mi'>54</span><span class='p'>,</span>
+<span class='lineno'> 9</span> 	<span class='p'>}</span>
+<span class='lineno'>10</span> 
+<span class='lineno'>11</span> 	<span class='n'>min</span> <span class='p'>:</span><span class='o'>=</span> <span class='n'>x</span><span class='o'>[</span><span class='mi'>0</span><span class='o'>]</span>
+<span class='lineno'>12</span> 
+<span class='lineno'>13</span> 	<span class='k'>for</span> <span class='n'>_</span><span class='p'>,</span> <span class='n'>value</span> <span class='p'>:</span><span class='o'>=</span> <span class='n'>range</span> <span class='n'>x</span> <span class='p'>{</span>
+<span class='lineno'>14</span> 		<span class='k'>if</span> <span class='n'>value</span> <span class='o'>&lt;</span> <span class='n'>min</span> <span class='p'>{</span>
+<span class='lineno'>15</span> 			<span class='n'>min</span> <span class='o'>=</span> <span class='n'>value</span>
+<span class='lineno'>16</span> 		<span class='p'>}</span>
+<span class='lineno'>17</span> 	<span class='p'>}</span>
+<span class='lineno'>18</span> 	<span class='n'>fmt</span><span class='o'>.</span><span class='n'>Println</span><span class='p'>(</span><span class='n'>min</span><span class='p'>)</span>
+<span class='lineno'>19</span> <span class='p'>}</span>
+</code></pre></div>

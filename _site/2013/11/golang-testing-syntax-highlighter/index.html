@@ -12,7 +12,7 @@ ASCII ART BABY!
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Fabrizio Giordano | Prototype webapp using distraction free font</title>
+  <title>Fabrizio Giordano | Golang find smallest number in array</title>
   <meta name="description" content="" />
   <meta name="author" content="Fabrizio Giordano">
   <meta name="viewport" content="width=device-width" />
@@ -49,22 +49,29 @@ ASCII ART BABY!
   <div class="container">
 
     <div class="post">
-  <div class="titolo"><h2><a href="/2013/02/prototype-font">Prototype webapp using distraction free font</a></h2></div>
-  <small>24 February 2013 </small>
+  <div class="titolo"><h2><a href="/2013/11/golang-testing-syntax-highlighter">Golang find smallest number in array</a></h2></div>
+  <small>05 November 2013 </small>
   <div class="corpo">
-    <p>Today I had an idea and I immediately play with a prototype.</p>
+    <pre><code>package main
 
-<p>I was creating some demo pages adding some defaul <a href="http://en.wikipedia.org/wiki/Lorem_ipsum">lorem ipsum</a> text.
-Lorem ipsum text is a good starting point. There are other funny Lorem like <a href="http://baconipsum.com/">baconipsum.com</a> or <a href="http://lorizzle.nl/">lorizzle.nl</a> or <a href="http://beeripsum.com/">beeripsum.com</a> .</p>
+import "fmt"
 
-<p>However I was looking for something more abstract and I got into this project <a href="https://github.com/christiannaths/Redacted-Font">Redacted Font</a></p>
+func main() {
+    x := []uint {
+        48,94,23,
+        3,45,54,
+    }
 
-<script src="https://gist.github.com/fabriziogiordano/5033660.js"></script>
+    min := x[0]
 
-
-<p>The result is a page with abstract text like this example:</p>
-
-<p><img src="https://raw.github.com/christiannaths/Redacted-Font/screenshots/screenshots/redacted-script-bold-screenshot-01.png" style="width:95%;"></p>
+    for _, value := range x {
+        if value &lt; min {
+            min = value
+        }
+    }
+    fmt.Println(min)
+}
+</code></pre>
 
     <div class="clear"></div>
   </div>
