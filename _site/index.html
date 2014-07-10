@@ -79,30 +79,26 @@ ASCII ART BABY!
   <div class="titolo"><h2><a href="/2013/11/golang-testing-syntax-highlighter">Golang find smallest number in array</a></h2></div>
   <small>05 November 2013 </small>
   <div class="corpo">
-    <p>```
-package main</p>
+    <pre><code>package main
 
-<p>import "fmt"</p>
+import "fmt"
 
-<p>func main() {</p>
-
-<pre><code>x := []uint {
-    48,94,23,
-    3,45,54,
-}
-
-min := x[0]
-
-for _, value := range x {
-    if value &lt; min {
-        min = value
+func main() {
+    x := []uint {
+        48,94,23,
+        3,45,54,
     }
-}
-fmt.Println(min)
-</code></pre>
 
-<p>}
-```</p>
+    min := x[0]
+
+    for _, value := range x {
+        if value &lt; min {
+            min = value
+        }
+    }
+    fmt.Println(min)
+}
+</code></pre>
 
     <div class="clear"></div>
   </div>
@@ -302,9 +298,8 @@ also known as <strong>"modulus 10"</strong> algorithm.</p>
 
 <p>In this Gist I also learned a new way to convert a string in an integer:</p>
 
-<p><code>
-d = ~~a[b];
-</code></p>
+<pre><code>d = ~~a[b];
+</code></pre>
 
 <p>nice eh.</p>
 
@@ -329,7 +324,7 @@ d = ~~a[b];
       <h2>
         Hi there, I’m Fabrizio.
         <br/>I am a <strong>developer</strong>, <strong>dreamer</strong>, <strong>product designer</strong> and speaker from NYC.
-        <br/>I work at <a href="http://www.marvel.com">Marvel</a>.
+        <br/>Currently coding for <a href="http://www.vimeo.com">Vimeo</a> and before for <a href="http://www.marvel.com">Marvel</a>.
         <br/>I <a href="/archive/">write</a>, <a href="http://twitter.com/fabrygio">tweet</a>, speak and <a href="https://github.com/fabriziogiordano/">share code</a> about stuffs I find online and I like.
       </h2>
     </div>
