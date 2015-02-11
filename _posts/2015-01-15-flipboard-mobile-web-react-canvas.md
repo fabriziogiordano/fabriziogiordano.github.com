@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flipboard implementation of the mobile web in canvas
+title: Flipboard implementation of the mobile web in canvas: 60FPS but 15,000 Speed Index and 22Mb size
 excerpt: 60FPS but 22Mb of site.
 ---
 
