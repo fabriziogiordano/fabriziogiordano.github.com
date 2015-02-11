@@ -17,9 +17,9 @@ A good speed index should be 5,000. Over 7,500 is bad. 15,000 is terrible.
 
 
 There are some rocky mistakes:
- - 2.5Mb animated Gif;
- - bunch of images over 1Mb
- - 500Kb JavaScript (probably React and other bundled js) not gzipped.
+* 2.5Mb animated Gif;
+* many images over 1Mb;
+* 500Kb JavaScript (probably React and other bundled js) not gzipped.
 
 They will fix it, I am sure.
 
