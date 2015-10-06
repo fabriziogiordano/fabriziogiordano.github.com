@@ -1,4 +1,42 @@
-markdown: rdiscount
-pygments: true
-permalink: /:year/:month/:title
-paginate: 10
+name: Fabrizio Giordano space
+description: Writing about stuffs
+meta_description: "Fabrizio Giordano space, writing about stuffs"
+
+aboutPage: true
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://www.fabriziogiordano.com'
+google_analytics: 'UA-137286-28'
+disqus: false
+disqus_shortname: 'fabrygio'
+
+# Details for the RSS feed generator
+url:            'http://www.fabriziogiordano.com'
+author:         'Fabrizio Giordano'
+authorTwitter:  'fabrygio'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post

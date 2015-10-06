@@ -1,8 +1,7 @@
 ---
-layout: default
-title: About me
-description: About Fabrizio Giordano
-permalink: /about/
+title: About
+permalink: about/
+profile: true
 ---
 
 Here my [Linkedin - Fabrizio Giordano](http://www.linkedin.com/in/fabriziogiordano "Linkedin profile")
@@ -21,3 +20,6 @@ Here my contacts:
 **Phone:** +1 408 622 9220
 
 **Skype:** fadfdsj
+
+
+{% include footer.html %}
