@@ -9,9 +9,9 @@ In my opinion it is a development/execution __masterpiece__ for what mobile web 
 
 ### However
 I was opening the site on a LTE network and the page took a good deal to load.
-Well they have a speed index of ___[15,000](http://www.webpagetest.org/result/150211_HM_58A/)__ and not even completely loaded.
+Well they have a speed index of [15,000](http://www.webpagetest.org/result/150211_HM_58A/) and not even completely loaded.
 
-_What?@?_
+**What?@?**
 
 A good speed index should be 5,000. Over 7,500 is bad. 15,000 is terrible.
 

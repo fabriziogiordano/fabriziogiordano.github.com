@@ -249,7 +249,7 @@ body
 {
     font: 26px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-    color: #666;
+    color: #313131;
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -531,7 +531,6 @@ i
 
 .post h2.headline
 {
-    /*font: italic 22px/1.3em Georgia,serif;*/
     font: normal 13px/1.5em 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 13px;
     /*margin-top: 15px;*/
@@ -543,7 +542,7 @@ i
     letter-spacing: 2px;
     text-transform: uppercase;
 
-    color: #b2b9be;
+    color: #797E82;
 }
 
 #post-list h2
@@ -565,19 +564,22 @@ h5
 
 h3
 {
-    font-size: 30px; font-weight: 400;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 
 h4
 {
-    font-size: 28px; font-weight: bold;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 
 h5
 {
-    font-size: 25px; font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 h6
