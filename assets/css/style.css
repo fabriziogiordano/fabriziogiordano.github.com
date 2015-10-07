@@ -133,9 +133,10 @@ nav.main-nav a {
 
 }
 nav.main-nav a.cta {
-	background: #5badf0;
-	color: #fff;
-	margin-left: 12px;
+    background: #5badf0;
+    color: #fff;
+    margin-left: 12px;
+    float: right;
 }
 
 #wrapper {
