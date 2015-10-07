@@ -79,7 +79,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video
+{
     font: inherit;font-size: 100%;margin: 0;padding: 0;vertical-align: baseline;
 
     border: 0;
@@ -95,27 +96,32 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section
+{
     display: block;
 }
 
-body {
+body
+{
     line-height: 1;
 }
 
 blockquote,
-q {
+q
+{
     quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
-q:after {
+q:after
+{
     content: none;
 }
 
-table {
+table
+{
     border-spacing: 0;
     border-collapse: collapse;
 }
@@ -123,13 +129,16 @@ table {
 
 *,
 *:before,
-*:after {
+*:after
+{
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;            box-sizing: border-box;
+      -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Clearfix */
-.clearfix:after {
+.clearfix:after
+{
     display: table;
     clear: both;
 
@@ -137,12 +146,14 @@ table {
 }
 
 
-.hidden {
+.hidden
+{
     display: none;
 }
 
 /* Icons */
-@font-face {
+@font-face
+{
     font-family: 'icons';
     font-weight: normal;
     font-style: normal;
@@ -155,7 +166,8 @@ table {
 }
 
 [class^='icon-']:before,
-[class*=' icon-']:before {
+[class*=' icon-']:before
+{
     font-family: 'icons';
     font-weight: normal;
     font-style: normal;
@@ -172,37 +184,44 @@ table {
 }
 
 
-.icon-facebook:before {
+.icon-facebook:before
+{
     content: '\e802';
 }
 
 
-.icon-facebook-squared:before {
+.icon-facebook-squared:before
+{
     content: '\e800';
 }
 
 
-.icon-twitter:before {
+.icon-twitter:before
+{
     content: '\e801';
 }
 
 
-.icon-twitter-1:before {
+.icon-twitter-1:before
+{
     content: '\e804';
 }
 
 
-.icon-facebook-circled:before {
+.icon-facebook-circled:before
+{
     content: '\e805';
 }
 
 
-.icon-twitter-circled:before {
+.icon-twitter-circled:before
+{
     content: '\e806';
 }
 
 
-.icon-facebook-rect:before {
+.icon-facebook-rect:before
+{
     content: '\e803';
 }
 
@@ -214,17 +233,20 @@ h5,
 p,
 .post-body ul,
 #post-list li,
-pre {
+pre
+{
     margin-bottom: 20px;
 }
 
 /* Base */
 html,
-body {
+body
+{
     height: 100%;
 }
 
-body {
+body
+{
     font: 26px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
     color: #666;
@@ -233,7 +255,8 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-h1 {
+h1
+{
     font-size: 48px;
     font-weight: bold;
 
@@ -242,19 +265,22 @@ h1 {
     color: #222;
 }
 
-h2 {
+h2
+{
     font: italic 35px/1.3em Georgia,serif;
 
     color: #bbb;
 }
 
-.profile #wrapper {
+.profile #wrapper
+{
     max-width: 800px;
     margin: 0 auto;
     padding: 0 40px 0;
 }
 
-.profile #header {
+.profile #header
+{
     position: relative;
 
     margin-bottom: 40px;
@@ -265,7 +291,8 @@ h2 {
     border-bottom: 1px solid #eee;
 }
 
-.profile #avatar {
+.profile #avatar
+{
     display: inline-block;
 
     width: 80px;
@@ -275,7 +302,8 @@ h2 {
     border-radius: 50%;
 }
 
-.profile h1 {
+.profile h1
+{
     font-size: 20px;
     font-weight: 400;
 
@@ -284,7 +312,8 @@ h2 {
     color: #222;
 }
 
-.profile h2 {
+.profile h2
+{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -295,7 +324,8 @@ h2 {
     color: #aaa;
 }
 
-nav.main-nav {
+nav.main-nav
+{
     /*text-align: right;*/
     /*position: fixed;*/
     z-index: 100;
@@ -309,7 +339,8 @@ nav.main-nav {
     background: rgba(255,255,255,.90);
 }
 
-nav.main-nav a {
+nav.main-nav a
+{
     font-size: 16px;
     /*font-weight: bold;*/
     line-height: 1.35;
@@ -323,12 +354,14 @@ nav.main-nav a {
     border-radius: 3px;
 }
 
-nav.main-nav a:hover {
+nav.main-nav a:hover
+{
     color: #4591d0;
 }
 
 
-nav.main-nav a.cta {
+nav.main-nav a.cta
+{
     float: right;
 
     margin-left: 12px;
@@ -336,23 +369,27 @@ nav.main-nav a.cta {
     color: #fff;
     background: #5badf0;
 }
-nav.main-nav a.cta:hover {
+nav.main-nav a.cta:hover
+{
     background: #4591d0;
 }
 
-#wrapper {
+#wrapper
+{
     max-width: 800px;
     margin: 0 auto;
     padding: 0 40px 100px 40px;
 }
 
-#wrapper.home {
+#wrapper.home
+{
     max-width: 800px;
     margin: 0 auto;
     padding: 0 40px 20px 40px;
 }
 
-.home #avatar {
+.home #avatar
+{
     float: right;
 
     width: 40px;
@@ -367,21 +404,24 @@ a,
 #title,
 #post-list a:hover,
 #post-list li:hover .dates,
-#title:hover {
+#title:hover
+{
     text-decoration: none;
 
     color: #5badf0;
     color: #5694f1;
 }
 
-p a {
+p a
+{
     color: #5694f1;
 }
 
 /*Transitions*/
 a,
 #post-nav a,
-#post-list a {
+#post-list a
+{
     -webkit-transition: all .15s ease;
        -moz-transition: all .15s ease;
         -ms-transition: all .15s ease;
@@ -389,25 +429,30 @@ a,
             transition: all .15s ease;
 }
 
-ul {
+ul
+{
     margin: 0; padding: 0;
 }
 
 
-li {
+li
+{
     list-style-position: inside;
     list-style-type: circle;
 }
 
 /* Line Height */
 #post-body,
-p {
+p
+{
     line-height: 1.7;
+
     word-break: break-word;
 }
 
 b,
-strong {
+strong
+{
     font-weight: 500;
 
     color: #1e2025;
@@ -415,11 +460,13 @@ strong {
 
 
 em,
-i {
+i
+{
     font-style: italic;
 }
 
-#title {
+#title
+{
     font-size: 19px;
     font-weight: 500;
     line-height: 100%;
@@ -430,7 +477,8 @@ i {
     padding-bottom: 20px;
 }
 
-.description {
+.description
+{
     font: italic 14px/1.4em Georgia,serif;
 
     float: right;
@@ -440,7 +488,8 @@ i {
 
 
 
-.home h1 {
+.home h1
+{
     font-size: 30px;
     font-weight: bold;
 
@@ -449,17 +498,20 @@ i {
     color: #222;
 }
 
-.home h2 {
+.home h2
+{
     font: italic 19px/1.3em Georgia,serif;
 
     color: #bbb;
 }
 
-.post header {
+.post header
+{
     text-align: center;
 }
 
-.post h1 {
+.post h1
+{
     font: 600 38px/1.4em 'Helvetica Neue', Helvetica,Arial,sans-serif;
 
     margin-bottom: 20px;
@@ -467,7 +519,8 @@ i {
     color: #222;
 }
 
-.post h2 {
+.post h2
+{
     font: 300 24px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
 
     margin-bottom: 40px;
@@ -476,7 +529,8 @@ i {
 }
 
 
-.post h2.headline {
+.post h2.headline
+{
     /*font: italic 22px/1.3em Georgia,serif;*/
     font: normal 13px/1.5em 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 13px;
@@ -492,7 +546,8 @@ i {
     color: #b2b9be;
 }
 
-#post-list h2 {
+#post-list h2
+{
     font: normal 17px/1.5em 'Helvetica Neue',Helvetica,Arial,sans-serif;
 
     max-width: 400px;
@@ -503,25 +558,30 @@ i {
 
 h3,
 h4,
-h5 {
+h5
+{
     color: #333;
 }
 
-h3 {
+h3
+{
     font-size: 30px; font-weight: 400;
 }
 
 
-h4 {
+h4
+{
     font-size: 28px; font-weight: bold;
 }
 
 
-h5 {
+h5
+{
     font-size: 25px; font-weight: bold;
 }
 
-h6 {
+h6
+{
     font-size: 13px;
     font-weight: bold;
 
@@ -530,7 +590,8 @@ h6 {
     color: #666;
 }
 
-p.small {
+p.small
+{
     font-size: 14px;
     line-height: 1.5;
 
@@ -539,13 +600,15 @@ p.small {
     color: #bbb;
 }
 
-blockquote {
+blockquote
+{
     padding-left: 15px;
 
     border-left: 3px solid #eee;
 }
 
-hr {
+hr
+{
     display: block;
 
     height: 1px;
@@ -555,11 +618,13 @@ hr {
     background: #eee;
 }
 
-span.code {
+span.code
+{
     font-family: Menlo, Monaco, Courier; font-size: 14px; background-color: #eee;
 }
 
-pre {
+pre
+{
     font-family: Menlo, Monaco, Courier;
     font-family: 'Source Code Pro',Menlo,monospace;
     font-size: 13px;
@@ -580,7 +645,8 @@ pre {
     background-color: #fdfdfd;
 }
 
-table {
+table
+{
     font-size: 13px;
     line-height: 1.5em;
 
@@ -591,7 +657,8 @@ table {
 }
 
 th,
-td {
+td
+{
     padding-right: 20px;
 
     text-align: left;
@@ -599,7 +666,8 @@ td {
 }
 
 table td,
-td {
+td
+{
     padding: 10px 15px;
 
     border-spacing: none;
@@ -608,16 +676,19 @@ td {
     border-style: solid;
 }
 
-tr > td {
+tr > td
+{
     border-top: 1px solid #eaeaea;
 }
 
-tr:nth-child(odd) > td {
+tr:nth-child(odd) > td
+{
     background: #fcfcfc;
 }
 
 thead th,
-th {
+th
+{
     font-size: 13px;
     font-weight: bold;
 
@@ -632,7 +703,8 @@ th {
     border-bottom: 1px solid #dadadc;
 }
 
-img {
+img
+{
     width: 100%;
     max-width: 100%;
 
@@ -640,7 +712,8 @@ img {
 }
 
 /* Made with Cactus Badge */
-#badge {
+#badge
+{
     position: absolute;
     right: 8px;
     bottom: 8px;
@@ -653,26 +726,31 @@ img {
 Post List
 =========================================== */
 #post-list,
-#archive-list {
+#archive-list
+{
     margin-top: 50px;
 }
 
 #post-list li,
-#archive-list li {
+#archive-list li
+{
     list-style-type: none;
 }
 
-#post-list li:last-child {
+#post-list li:last-child
+{
     margin-bottom: 0;
 }
 
-#post-list li + li {
+#post-list li + li
+{
     padding-top: 20px;
 
     border-top: 1px solid #eee;
 }
 
-#post-list a {
+#post-list a
+{
     font: bold 19px/1.7 'Helvetica Neue',helvetica,Arial,sans-serif;
 
     display: block;
@@ -680,7 +758,8 @@ Post List
     color: #333;
 }
 
-#post-list .dates {
+#post-list .dates
+{
     font: 300 17px/1.8 'Helvetica Neue',helvetica,Arial,sans-serif;
 
     position: relative;
@@ -693,14 +772,16 @@ Post List
     color: #bbb;
 }
 
-#post-list-footer {
+#post-list-footer
+{
     margin-top: 20px;
     padding-top: 100px;
 
     border-top: 1px solid #eee;
 }
 
-#archive-link {
+#archive-link
+{
     font-size: 13px;
     font-weight: bold;
 
@@ -712,20 +793,23 @@ Post List
     box-shadow: 0 0 0 1px hsla(207,83%,80%,1);
 }
 
-#archive-link:hover {
+#archive-link:hover
+{
     color: #fff;
     background: #5694f1;
     box-shadow: 0 0 0 1px #5694f1;
 }
 
-#archive-link span {
+#archive-link span
+{
     font-size: 17px;
 
     position: relative;
     top: 0;
 }
 
-#footer {
+#footer
+{
     margin-top: 100px;
     padding: 40px 0 0 0;
 
@@ -733,15 +817,18 @@ Post List
 }
 
 /* Post Page */
-#header {
+#header
+{
     border-bottom: 1px solid #eee;
 }
 
-.post {
+.post
+{
     margin: 80px 0 0 0;
 }
 
-#post-meta {
+#post-meta
+{
     font-size: 13px;
     font-weight: bold;
     line-height: 1.4;
@@ -756,7 +843,8 @@ Post List
     border-bottom: 1px solid #eee;
 }
 
-#post-meta div span {
+#post-meta div span
+{
     font-weight: 500;
 
     display: block;
@@ -764,57 +852,63 @@ Post List
     color: #aaa;
 }
 
-#post-meta div span.dark {
+#post-meta div span.dark
+{
     color: #1e2025;
 }
 
-#post-meta div {
+#post-meta div
+{
     float: left;
 
     margin: 0 25px 0 0;
 }
 
-#sharing {
+#sharing
+{
     float: right;
 
     margin: -2px;
 }
 
-#sharing a {
+#sharing a
+{
     font-size: 16px;
+    font-weight: bold;
 
     display: inline-block;
 
-    font-weight: bold;
     margin-top: 4px;
     margin-left: 1px;
-
     padding: 6px 10px;
 
     vertical-align: middle;
 
     color: #fff;
     border-radius: 4px;
-
 }
 
-#sharing a:hover {
+#sharing a:hover
+{
     /*color: #444;*/
     opacity: .8;
 }
 
-#sharing a.facebook {
+#sharing a.facebook
+{
     background: #4361b3;
 }
 
 
-#sharing a.twitter {
+#sharing a.twitter
+{
     background: #4fafed;
 }
 
 
 /* Post Navigation */
-#post-nav {
+#post-nav
+{
     font-size: 13px;
     font-weight: 500;
 
@@ -826,7 +920,8 @@ Post List
     border-top: 1px solid #eee;
 }
 
-#post-nav span {
+#post-nav span
+{
     position: relative;
 
     -webkit-transition: all .1s linear;
@@ -836,42 +931,51 @@ Post List
             transition: all .1s linear;
 }
 
-#post-nav span.prev {
+#post-nav span.prev
+{
     float: left;
 }
 
-#post-nav span.next {
+#post-nav span.next
+{
     float: right;
 }
 
-#post-nav span .arrow {
+#post-nav span .arrow
+{
     position: relative;
 
     padding: 1px;
 }
 
-#post-nav span.prev:hover .arrow {
+#post-nav span.prev:hover .arrow
+{
     left: -4px;
 }
 
-#post-nav span.next:hover .arrow {
+#post-nav span.next:hover .arrow
+{
     right: -4px;
 }
 
-#post-nav span.prev:hover {
+#post-nav span.prev:hover
+{
     left: -3px;
 }
 
-#post-nav span.next:hover {
+#post-nav span.next:hover
+{
     right: -3px;
 }
 
 /* Archive */
-h1.archive {
+h1.archive
+{
     margin-bottom: 0;
 }
 
-h2.month {
+h2.month
+{
     font: bold 13px/1 'Helvetica Neue',helvetica,Arial,sans-serif;
 
     width: 100%;
@@ -884,11 +988,13 @@ h2.month {
     border-bottom: 1px solid #eee;
 }
 
-#archive-list li:last-child {
+#archive-list li:last-child
+{
     margin-bottom: 0;
 }
 
-#archive-list a {
+#archive-list a
+{
     font: bold 17px/1.7 'Helvetica Neue',helvetica,Arial,sans-serif;
 
     display: block;
@@ -896,7 +1002,8 @@ h2.month {
     color: #333;
 }
 
-#archive-list .dates {
+#archive-list .dates
+{
     font: 300 17px/1.7 'Helvetica Neue',helvetica,Arial,sans-serif;
 
     position: relative;
@@ -908,11 +1015,13 @@ h2.month {
 }
 
 #archive-list li a:hover,
-#archive-list li:hover .dates {
+#archive-list li:hover .dates
+{
     color: #5694f1;
 }
 
-#post-meta img.avatar {
+#post-meta img.avatar
+{
     float: left;
 
     width: 36px;
@@ -924,79 +1033,97 @@ h2.month {
     box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee;
 }
 
-#post-list.archive.readmore h3 {
+#post-list.archive.readmore h3
+{
     font: 400 20px 'Helvetica Neue', Helvetica,Arial,sans-serif;
 
     margin-bottom: 30px;
 }
 
-#post-list.archive.readmore a {
+#post-list.archive.readmore a
+{
     font: 400 16px/1.6 'Helvetica Neue',helvetica,Arial,sans-serif;
 
     color: #5694f1;
 }
 
-#post-list.archive.readmore a:hover {
+#post-list.archive.readmore a:hover
+{
     opacity: .8;
 }
 
-#post-list.archive.readmore .dates {
+#post-list.archive.readmore .dates
+{
     font: 300 16px/1.6 'Helvetica Neue',helvetica,Arial,sans-serif;
 }
 
 
 /* Media Queries */
-@media screen and (max-width: 540px) {
-    #wrapper {
+@media screen and (max-width: 540px)
+{
+    #wrapper
+    {
         padding: 20px 20px 20px 20px;
     }
 
-    #header {
+    #header
+    {
         margin-bottom: 60px; border-bottom: 1px solid #eee;
     }
 
-    .post {
+    .post
+    {
         margin: 40px 0;
     }
 
-    #footer {
+    #footer
+    {
         margin-top: 60px;
     }
 
     #post-list,
-    #archive-list {
+    #archive-list
+    {
         margin-top: 0;
     }
 
-    #post-meta {
+    #post-meta
+    {
         margin-top: 60px;
     }
 
-    #title {
+    #title
+    {
         font-size: 17px;
     }
 
-    #post-list .dates {
+    #post-list .dates
+    {
         display: none;
     }
 
-    #post-list-footer {
+    #post-list-footer
+    {
         margin-top: 20px; padding-top: 40px;
     }
 
-    h1 {
+    h1
+    {
         font-size: 26px;
     }
 
-    .post h2.headline {
+    .post h2.headline
+    {
         font-size: 13px;
     }
 
-    .post h1 {
+    .post h1
+    {
         font-size: 24px;
     }
 
-    .post h2 {
+    .post h2
+    {
         font-size: 20px;
     }
 }
