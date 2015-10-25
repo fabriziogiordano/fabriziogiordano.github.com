@@ -15,7 +15,7 @@ With my team last year we built the [new mobile web experience](https://vimeo.co
 ### Vimeo + Twitter = Vimter
 The two experiences look very similar. I thought at the possibility of the two company to join and create a completely new video centric platform called: Vimter
 
-![Vimeo + Twitter = Vimter](https://cdn-images-1.medium.com/max/2000/1*DErYhxiNfW8AfQ5Dnz54hA.png)
+![Vimeo + Twitter = Vimter](https://cdn-images-1.medium.com/max/2000/1*0r-4k0wIrs_CdmHGVklLtQ.png)
 
 
 
