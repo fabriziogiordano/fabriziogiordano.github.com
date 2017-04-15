@@ -5,7 +5,7 @@ meta_description: "Fabrizio Giordano space, writing about stuffs"
 aboutPage: true
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 paginate: 20
 baseurl: /
