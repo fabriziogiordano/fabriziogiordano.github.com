@@ -14,6 +14,8 @@ google_analytics: 'UA-137286-28'
 disqus: false
 disqus_shortname: 'fabrygio'
 
+gems: [jekyll-paginate]
+
 # Details for the RSS feed generator
 url:            'http://www.fabriziogiordano.com'
 author:         'Fabrizio Giordano'
